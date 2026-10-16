@@ -1,1 +1,23 @@
-# SSL-TLS-
+# SSL-TLS
+
+SSL : Security Socket Layer
+TLS : Transport Layer Security
+
+SSL/TLS Handshake is a series of steps where it allows two parties authenticate with each other & establish a secure channel for transfering the data.
+
+Step 1: 
+(ClientHello) :- Your browser sends a ClientHello message to the server when u visit a secure website.it contains the information about SSL/TLS versions & ciphersuites that supports.
+
+(ServerHello) : - Then server replies with ServerHello message. including SSL/TLS higher version & cipherSuites both parties support.
+
+                              The server selects which TLS & ciphers used according to client.
+
+And servers present the digital certificate ,verified by CA like an id card providing authnticity.
+
+Then Your browser validates the server certificate. Once Verified, it uses servers public key to encrypt and a unique session key sends back to server.
+
+Then server decrypts using private key. then server & client will use unique session key for symmetric encryption of all communications.
+
+Asymmetric Encryption : - Data encrypted with the public key can only be decrypted with the private key.
+Symmetric Encryption:- This uses a single shared key for encrypting and decrypting data. (This is faster)
+
