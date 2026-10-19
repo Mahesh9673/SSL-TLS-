@@ -21,3 +21,4 @@ Then server decrypts using private key. then server & client will use unique ses
 Asymmetric Encryption : - Data encrypted with the public key can only be decrypted with the private key.
 Symmetric Encryption:- This uses a single shared key for encrypting and decrypting data. (This is faster)
 
+
